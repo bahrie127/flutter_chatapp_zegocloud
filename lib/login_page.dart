@@ -41,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
               ElevatedButton(
                   onPressed: () async {
                     await ZIMKit()
-                        .connectUser(id: userId.text, name: userId.text);
+                        .connectUser(id: userId.text, name: username.text);
                     Navigator.of(context).pushReplacement(
                       MaterialPageRoute(
                         builder: (context) => const HomePage(),
